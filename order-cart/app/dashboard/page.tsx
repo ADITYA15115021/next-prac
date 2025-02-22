@@ -32,13 +32,10 @@ export default function Dashboard() {
 
       </div>
 
-      <div className="pt-[90px] lg:pt-[90px] lg:min-h-[300px] 
-                     flex flex-col items-center justify-center 
-                     bg-white border rounded-lg border-gray-200 shadow
-                     m-6 ">
+      <div className="flex flex-col items-center justify-center p-4 text-center max-w-lg mx-auto">
         <div className="p-4 text-black text-6xl break-words">
           Welcome to weOrder! <br /> <span className="text-green-700">All your needs end here.</span> </div>
-        <div className="px-4 mt-4 text-black text-xl">We provide a platform where customers and sellers can collborate with each other.
+        <div className="text-lg sm:text-xl md:text-2xl text-gray-500 mt-2">We provide a platform where customers and sellers can collborate with each other.
                         <br/>
                        We intend to provide a safe and fostering environment for all  
         </div>
@@ -52,6 +49,15 @@ export default function Dashboard() {
       <div className="grid grid-cols-2">
 
       </div>
+
+      <div className="bg-gray-200 grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
+        <div className="bg-white border border-gray-200 shadow-gray-300 shadow-lg  text-white p-6 rounded-lg h-40 md:h-40">Card 1</div>
+        <div className="bg-white text-white p-6 rounded-lg h-40 ">Card 2</div>
+        <div className="bg-white text-white p-6 rounded-lg h-40 ">Card 3</div>
+        <div className="bg-white text-white p-6 rounded-lg h-40 ">Card 4</div>
+        <div className="bg-white text-white p-6 rounded-lg h-40 md:h-48">Card 5</div>
+      </div>
+
 
     </main>
 
