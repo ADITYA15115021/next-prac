@@ -22,13 +22,21 @@ model UserDetails {
   orders OrderDetails[]
 }
 
+model  ProductDetails {
+  id Int @id @default(autoincrement())
+  category String
+  productId Int  @unique
+  productName String
+  price Float
+  orders  OrderDetails[]
+}
+
 model OrderDetails {
   id Int @id @default(autoincrement())
-  productCode Int 
-  productName String
-  orderedOn DateTime
-  price Float
-  quantity Int
   userId Int
+  productCode Int 
+  quantity Int
+  orderedOn DateTime
   user UserDetails @relation(fields: [userId],references: [id],onDelete: Cascade)
+  product  ProductDetails @relation(fields: [productCode], references: [productId], onDelete: Cascade)
 }
